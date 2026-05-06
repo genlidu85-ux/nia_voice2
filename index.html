@@ -26,20 +26,17 @@
   font-weight: bold;
   z-index: 9999;
 }
-    .yt-link {
+.yt-link {
   position: fixed;
-  top: 60px; /* Xの下に置くならずらす */
+  top: 60px; /* Xの下に置く */
   right: 10px;
+  z-index: 9999;
+}
 
-  background: rgba(255,0,0,0.8);
-  color: white;
-
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}    
-
+.yt-link img {
+  width: 40px;  /* サイズ調整 */
+  height: auto;
+}
 .x-link:hover {
   background: rgba(0,0,0,0.8);
 }
@@ -260,7 +257,9 @@
     
 
     <a href="https://x.com/niahosinosensei?s=21" class="x-link">𝕏</a>  
-    <a href="https://www.youtube.com/@huerunia" class="yt-link">▶</a>
+    <a href="https://www.youtube.com/@huerunia" class="yt-link" target="_blank">
+  <img src="youtube.svg" alt="YouTube">
+</a>
     <audio id="player" preload="none"></audio>
 
       <script>
